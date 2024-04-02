@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+a,
+button,
+li {
+  cursor: pointer;
+}
+.pad {
+  padding: 0 2.5rem;
+}
+/*  Header */
+header {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: block;
+  margin-top: 3px;
+}
+/* nav */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  /* changes */
+  /* padding-right: 0 !important; */
+  /* heigth: 30px */
+  width: 100vw;
+  height: 60px;
+  box-shadow: 2px 2px 4px gainsboro;
+}
+.navigate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 2.5rem;
+  position: relative;
+  right: 0;
+  top: 0;
+}
+.left-nav {
+  width: 100vw;
+  padding: 10px 2.5rem;
+  /* background-color: red; */
+  background-color: white;
+  position: absolute;
+  height: 230px;
+  top: 3em;
+  /* changes */
+  right: -2.5em;
+  /* right: 0; */
+  display: none;
+}
+.menu-icon {
+  border: 0.1px solid rgba(217, 217, 217, 0.845);
+  padding: 8px 13px;
+  font-size: 18px;
+  border-radius: 2px;
+}
+.navigate:focus-within .left-nav {
+  display: block;
+  transition: all 1s linear;
+}
+.main-content {
+  width: 100vw;
+  height: 200vh;
+}
+/* page logo */
+.agro-img {
+  width: 140px;
+  height: 40px;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+  gap: 0.9em;
+  flex-direction: column;
+}
+.link {
+  font-size: 1em;
+}
+.link a {
+  color: rgb(104, 102, 102);
+  font-weight: 600;
+}
+.link:hover a {
+  color: #07c507;
+}
+.link-down {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+.link-down i {
+  font-size: 6px;
+  color: rgb(104, 102, 102);
+}
+.link-down:hover i {
+  color: #07c507;
+}
+.food {
+  margin-top: 20px;
+  font-size: 0.8em;
+  font-weight: 800;
+  width: 7.5em;
+  border: none;
+  border: 2px solid #07c507;
+  height: 3.5em;
+  background: none;
+  border-radius: 3px;
+  color: #07c507;
+}
+/* nav end */
+/* header main */
+.header-area {
+  margin-top: 60px;
+}
